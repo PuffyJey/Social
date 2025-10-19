@@ -3,43 +3,33 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
-  <title>RedText — live</title>
+  <title>Feed — Red del Evangelio</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <header>
-      <h1 id="title">RedText</h1>
-      <div id="authPanel"></div>
-    </header>
+  <div class="topbar">
+    <div class="logo">Red del Evangelio</div>
+    <div class="actions" id="topActions"></div>
+  </div>
 
-    <section id="composer" class="card">
-      <div id="welcome">Entra o regístrate para publicar</div>
-      <div id="loginForm" style="display:none">
-        <input id="username" placeholder="Usuario" />
-        <input id="password" type="password" placeholder="Contraseña" />
-        <div style="margin-top:8px">
-          <button id="btnLogin">Entrar</button>
-          <button id="btnSignup">Crear cuenta</button>
-          <button id="btnLogout" style="display:none;background:#aab3bd">Salir</button>
-        </div>
-      </div>
-
-      <div id="publishBox" style="display:none;margin-top:10px">
-        <textarea id="postText" placeholder="Escribe tu reflexión..."></textarea>
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-top:8px">
-          <div class="meta" id="userLabel"></div>
+  <main class="container">
+    <aside class="left">
+      <div class="card composer" id="composer" style="display:none">
+        <div class="small meta" id="userLabel"></div>
+        <textarea id="postText" placeholder="Comparte un versículo, reflexión o testimonio..."></textarea>
+        <div style="display:flex;justify-content:space-between;align-items:center">
+          <div class="meta">Máx 1000 caracteres</div>
           <button id="btnPost">Publicar</button>
         </div>
       </div>
-    </section>
 
-    <section class="card">
-      <h3>Timeline global</h3>
-      <div id="posts"></div>
-    </section>
-  </div>
+      <div class="card">
+        <h3>Timeline</h3>
+        <div id="posts"></div>
+      </div>
+    </aside>
+  </main>
 
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
