@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Entrar — Red del Evangelio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="center-wrap">
+    <div class="card auth-card">
+      <h2>Entrar / Registrarse</h2>
+      <input id="username" placeholder="Nombre de usuario" />
+      <input id="password" type="password" placeholder="Contraseña" />
+      <div style="display:flex;gap:8px;margin-top:8px">
+        <button id="btnLogin">Entrar</button>
+        <button id="btnSignup">Crear cuenta</button>
+      </div>
+      <div style="text-align:center;margin:12px 0;color:#666">o</div>
+      <div style="text-align:center">
+        <!-- botón que abre autorización Google -->
+        <a class="google-btn" href="/auth/google">Continuar con Google</a>
+      </div>
+      <div id="msg" class="meta"></div>
+    </div>
+  </div>
+
+  <script src="login.js"></script>
+</body>
+</html>
